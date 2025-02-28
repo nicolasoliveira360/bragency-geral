@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo escuro -->
+  <rect width="1920" height="1080" fill="#111111"/>
+  
+  <!-- Grid decorativo -->
+  <g opacity="1">
+    <!-- Linhas verticais -->
+    <line x1="480" y1="0" x2="480" y2="1080" stroke="#222222" stroke-width="1"/>
+    <line x1="960" y1="0" x2="960" y2="1080" stroke="#222222" stroke-width="1"/>
+    <line x1="1440" y1="0" x2="1440" y2="1080" stroke="#222222" stroke-width="1"/>
+    
+    <!-- Bordas laterais -->
+    <line x1="0" y1="0" x2="0" y2="1080" stroke="#222222" stroke-width="1"/>
+    <line x1="1920" y1="0" x2="1920" y2="1080" stroke="#222222" stroke-width="1"/>
+  </g>
+</svg> 

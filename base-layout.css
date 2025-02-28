@@ -1,0 +1,146 @@
+:root {
+    /* Cores Base - Dark Theme */
+    --color-bg-primary: #111111;    /* Fundo principal */
+    --color-bg-secondary: #1A1A1A;  /* Fundo secundário */
+    --color-bg-tertiary: #222222;   /* Fundo terciário */
+    
+    /* Tons de Cinza */
+    --color-text-primary: #FFFFFF;    /* Texto principal */
+    --color-text-secondary: #999999;  /* Texto secundário */
+    --color-text-tertiary: #666666;   /* Texto terciário */
+    
+    /* Acentos Metálicos */
+    --color-accent: #D4B98C;          /* Dourado suave */
+    --color-accent-hover: #E5CAA3;    /* Dourado hover */
+    --color-lines: #333333;           /* Linhas e bordas */
+    
+    /* Gradientes Sofisticados */
+    --gradient-dark: linear-gradient(135deg, #111111 0%, #1A1A1A 100%);
+    --gradient-accent: linear-gradient(135deg, #D4B98C 0%, #A38E6A 100%);
+    --gradient-metal: linear-gradient(135deg, #333333 0%, #444444 100%);
+  }
+  
+  @layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      @apply bg-[#111111] text-white font-sans antialiased;
+      text-rendering: optimizeLegibility;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-montserrat font-light tracking-tight text-white;
+      letter-spacing: -0.02em;
+    }
+  }
+  
+  @layer components {
+    .container {
+      @apply max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8;
+    }
+  
+    .btn-primary {
+      @apply bg-[#D4B98C] text-[#111111] font-medium py-4 px-8 rounded-none
+      hover:bg-[#E5CAA3] transition-all duration-500 ease-out
+      border border-transparent
+      text-sm uppercase tracking-wider;
+    }
+  
+    .btn-secondary {
+      @apply bg-transparent text-white font-medium py-4 px-8 rounded-none
+      hover:bg-[#1A1A1A] transition-all duration-500 ease-out
+      border border-white/20 hover:border-[#D4B98C]
+      text-sm uppercase tracking-wider;
+    }
+  
+    .section {
+      @apply py-24 md:py-32 lg:py-40;
+    }
+  
+    .section-title {
+      @apply text-4xl md:text-5xl lg:text-6xl font-light mb-8 
+      text-white leading-tight;
+    }
+  
+    .section-subtitle {
+      @apply text-lg md:text-xl text-[#999999] max-w-3xl mx-auto 
+      leading-relaxed tracking-wide;
+    }
+  
+    .card {
+      @apply bg-[#1A1A1A] rounded-none border border-[#333333]
+      hover:border-[#D4B98C] transition-all duration-500
+      p-8 md:p-10;
+    }
+  
+    .glass-effect {
+      @apply bg-[#111111]/80 backdrop-blur-md border-b border-[#333333];
+    }
+  
+    /* Grids arquitetônicos */
+    .grid-architectural {
+      @apply grid gap-8 md:gap-12 lg:gap-16;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    }
+  
+    /* Elementos decorativos */
+    .line-detail {
+      @apply w-16 h-px bg-[#D4B98C] my-6;
+    }
+  
+    .number-detail {
+      @apply text-8xl font-light text-[#222222] absolute -top-10 -left-6 z-0 select-none;
+    }
+  
+    /* Animações refinadas */
+    .animate-fade-in {
+      @apply opacity-0 animate-[fadeIn_0.8s_ease-out_forwards];
+    }
+  
+    .animate-slide-up {
+      @apply opacity-0 translate-y-8 animate-[slideUp_0.8s_ease-out_forwards];
+    }
+  
+    .animate-slide-in-right {
+      @apply opacity-0 translate-x-8 animate-[slideInRight_0.8s_ease-out_forwards];
+    }
+  
+    /* Elementos de grid */
+    .grid-line {
+      @apply border-[#222222] transition-colors duration-500 hover:border-[#333333];
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo -->
+  <rect width="512" height="512" fill="#111111"/>
+  
+  <!-- Borda externa -->
+  <rect x="32" y="32" width="448" height="448" stroke="#D4B98C" stroke-width="4" fill="none"/>
+  
+  <!-- Borda interna -->
+  <rect x="48" y="48" width="416" height="416" stroke="#D4B98C" stroke-opacity="0.2" stroke-width="2" fill="none"/>
+  
+  <!-- Texto BR -->
+  <text x="256" y="290" font-family="Montserrat" font-weight="200" font-size="180" fill="#D4B98C" text-anchor="middle" dominant-baseline="middle">BR</text>
+</svg> 
