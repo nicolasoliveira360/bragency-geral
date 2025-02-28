@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="py-16 bg-[var(--color-bg-tertiary)] border-t border-[var(--color-lines)] overflow-x-hidden">
@@ -36,21 +38,21 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-xl font-light mb-6 heading-text">Navegação</h4>
             <ul className="space-y-4">
-              <li><a href="/#inicio" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
+              <li><Link href="/#inicio" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
                 <i className="fas fa-chevron-right text-xs"></i>Início
-              </a></li>
-              <li><a href="/#servicos" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
+              </Link></li>
+              <li><Link href="/#servicos" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
                 <i className="fas fa-chevron-right text-xs"></i>Serviços
-              </a></li>
-              <li><a href="/#portfolio" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
+              </Link></li>
+              <li><Link href="/#portfolio" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
                 <i className="fas fa-chevron-right text-xs"></i>Portfólio
-              </a></li>
-              <li><a href="/#sobre" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
+              </Link></li>
+              <li><Link href="/#sobre" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
                 <i className="fas fa-chevron-right text-xs"></i>Sobre
-              </a></li>
-              <li><a href="/contato" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
+              </Link></li>
+              <li><Link href="/contato" className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors duration-300 flex items-center gap-2 body-text">
                 <i className="fas fa-chevron-right text-xs"></i>Contato
-              </a></li>
+              </Link></li>
             </ul>
           </div>
 
@@ -63,7 +65,7 @@ export default function Footer() {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div>
-                  <p className="text-[var(--color-text-primary)] body-text">contato@bragency.com.br</p>
+                  <Link href="mailto:contato@bragency.com.br" className="text-[var(--color-text-primary)] body-text">contato@bragency.com.br</Link>
                   <p className="text-[var(--color-text-secondary)] text-sm body-text">Resposta em até 24h</p>
                 </div>
               </div>
@@ -72,7 +74,7 @@ export default function Footer() {
                   <i className="fab fa-whatsapp"></i>
                 </div>
                 <div>
-                  <p className="text-[var(--color-text-primary)] body-text">+55 (43) 99609-6047</p>
+                  <Link href="tel:+5543996096047" className="text-[var(--color-text-primary)] body-text">+55 (43) 99609-6047</Link>
                   <p className="text-[var(--color-text-secondary)] text-sm body-text">Seg - Sex, 9h às 18h</p>
                 </div>
               </div>
@@ -95,8 +97,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} BR Agency. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-[var(--color-text-tertiary)] text-sm hover:text-[var(--color-accent)] transition-colors duration-300 body-text">Termos de Uso</a>
-            <a href="#" className="text-[var(--color-text-tertiary)] text-sm hover:text-[var(--color-accent)] transition-colors duration-300 body-text">Política de Privacidade</a>
+            <Link href="#" className="text-[var(--color-text-tertiary)] text-sm hover:text-[var(--color-accent)] transition-colors duration-300 body-text">Termos de Uso</Link>
+            <Link href="#" className="text-[var(--color-text-tertiary)] text-sm hover:text-[var(--color-accent)] transition-colors duration-300 body-text">Política de Privacidade</Link>
           </div>
         </div>
       </div>

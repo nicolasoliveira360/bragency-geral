@@ -61,7 +61,7 @@ export default function ContactForm() {
         descricao: ''
       });
 
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: 'error',
         message: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.'
